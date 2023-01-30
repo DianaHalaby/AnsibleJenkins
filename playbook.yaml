@@ -16,7 +16,7 @@
             command:
                     chdir: "{{ gitdir }}"
                     cmd: "mvn package"
-- name: "setup webserver and deploy WAR"
+- name: "setup worker1 and deploy WAR"
   hosts: webserver 
   become: true
   vars:
