@@ -1,4 +1,4 @@
-- name: "generating the war file"
+- name: "generate war file"
   hosts: local
   become: true
   vars:
@@ -16,8 +16,8 @@
             command:
                     chdir: "{{ gitdir }}"
                     cmd: "mvn package"
-- name: "setup worker1 and deploy WAR"
-  hosts: worker1 
+- name: "setup webserver and deploy WAR"
+  hosts: webserver 
   become: true
   vars:
           gitdir: "/tmp/addressbook-project-1"
