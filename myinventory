@@ -1,2 +1,2 @@
-worker1 ansible_host=ip-172-31-61-46 ansible_user=labsuser
+worker1 ansible_host=ip-172-31-61-46 
 local ansible_connection=local
